@@ -1,7 +1,6 @@
 words = ["apple", "banana", "cherry", "blueberry"]
-letter = "e"
-print(len(words))
-
-for word in range (len(words)):
-    if letter in word:
-        print ("the longest word is [word]")
+longest_word = words[0]
+for word in words[1:]:
+    if len(word) >len(longest_word):    
+      longest_word = word
+print (f"the longest word is {longest_word}")
